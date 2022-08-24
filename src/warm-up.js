@@ -41,36 +41,40 @@ else {
 // Express the following in code: If the variable "pages" is less than 1000 log
 // the statement 'I could read that in a day!', otherwise, log the statement
 // 'Ok, maybe I could read that in a day and a half'
-
-
-
+if (pages < 1000) {
+  console.log("I could read that in a day!")
+}
+else {
+  console.log("Ok, maybe I could read that in a day and a half")
+}
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
-
-
-
+if (isFavorite === true) {
+  console.log(`My favorite book is ${title}`);
+}
+else {
+  console.log(`I recently read the ${title} book`);
+}
 //------------------------- Arrays -------------------------//
-
-
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-
+var books = ["Far Side of the Gallery","Calvin & Hobbes", "Simpsons comics",
+"Sarah Scribbles", "Cyanide & Happiness"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(books[2]);
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = [3, 20, 18, 9, 2, 7, 29, 45, 93, 82, 55, 34];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(belowTwoHundred[4]);
 
 //------------------------- Objects -------------------------//
-
 // Create a new variable "dictionary" and assign to it an object literal with two
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
