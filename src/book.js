@@ -11,26 +11,24 @@ function buildMainCharacter (name, age, pronouns) {
 return character;
 }
 
-function saveReview (statement,listOfReviews) {
-listOfReviews.push(statement);
+function saveReview (statement,listOfReviews)
+{
+  // listOfReviews.push(statement);
+  // return listOfReviews;
+  var isDuplicate;
+
+if(listOfReviews.length === 0)
+{
+ listOfReviews.push(statement);
+}
+else
+{
+  if (listOfReviews.includes(statement) === false)
+  {
+    listOfReviews.push(statement);
+  }
+}
 return listOfReviews;
-
-// var flag = false;
-//
-// for (var i = 0; i < listOfReviews.length; i++)
-// {
-//   if(listOfReviews[i] != statement)
-//   {
-//     flag = true;
-//   }
-// }
-//
-// if(flag === false)
-//   {
-//     listOfReviews.push(statement);
-//   }
-//   return listOfReviews;
-
 }
 
 module.exports = {
