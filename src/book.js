@@ -11,16 +11,32 @@ function buildMainCharacter (name, age, pronouns) {
 return character;
 }
 
-// function saveReview (statement) {
-// var listOfReviews = [];
-// listOfReviews.push(statement);
-// return listOfReviews;
+function saveReview (statement,listOfReviews) {
+listOfReviews.push(statement);
+return listOfReviews;
+
+// var flag = false;
+//
+// for (var i = 0; i < listOfReviews.length; i++)
+// {
+//   if(listOfReviews[i] != statement)
+//   {
+//     flag = true;
+//   }
 // }
+//
+// if(flag === false)
+//   {
+//     listOfReviews.push(statement);
+//   }
+//   return listOfReviews;
+
+}
 
 module.exports = {
   createTitle,
   buildMainCharacter,
-  //saveReview,
+  saveReview,
   // calculatePageCount,
   // writeBook,
   // editBook
