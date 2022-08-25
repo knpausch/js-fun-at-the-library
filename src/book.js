@@ -13,20 +13,16 @@ return character;
 
 function saveReview (statement,listOfReviews)
 {
-  // listOfReviews.push(statement);
-  // return listOfReviews;
-  var isDuplicate;
-
-if(listOfReviews.length === 0)
-{
- listOfReviews.push(statement);
-}
-else
-{
-  if (listOfReviews.includes(statement) === false)
+  if(listOfReviews.length === 0)
   {
     listOfReviews.push(statement);
   }
+  else
+  {
+    if (listOfReviews.includes(statement) === false)
+    {
+      listOfReviews.push(statement);
+    }
 }
 return listOfReviews;
 }
