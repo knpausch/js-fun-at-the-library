@@ -9,8 +9,6 @@ function shelfBook(book, sciFiShelf)
 
 function unshelfBook(book, sciFiShelf)
 {
-  var titleFound;
-
   for (var i = 0; i<sciFiShelf.length;i++)
   {
     if (sciFiShelf[i].title === book)
