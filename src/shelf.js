@@ -34,9 +34,14 @@ function listTitles(shelf)
   return result;
 }
 
+function searchShelf()
+{
+  
+}
+
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
