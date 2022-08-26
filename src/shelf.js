@@ -19,9 +19,19 @@ function unshelfBook(book, sciFiShelf)
   return sciFiShelf;
 }
 
-function listTitles()
+function listTitles(shelf)
 {
-  
+  var listOfTitles = [];
+  var result;
+
+  for(var i = 0; i<shelf.length; i++)
+  {
+    listOfTitles.push(shelf[i].title)
+  }
+
+  result = `${listOfTitles[0]}, ${listOfTitles[1]}, ${listOfTitles[2]}`
+
+  return result;
 }
 
 module.exports = {
