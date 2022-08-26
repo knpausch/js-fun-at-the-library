@@ -19,9 +19,14 @@ function unshelfBook(book, sciFiShelf)
   return sciFiShelf;
 }
 
+function listTitles()
+{
+  
+}
+
 module.exports = {
   shelfBook,
   unshelfBook,
-  // listTitles,
+  listTitles,
   // searchShelf
 };
