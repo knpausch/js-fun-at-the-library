@@ -34,9 +34,17 @@ function listTitles(shelf)
   return result;
 }
 
-function searchShelf()
+function searchShelf(shelf, title)
 {
-  
+  var isFound = false;
+  for(var i = 0; i<shelf.length; i++)
+  {
+    if (shelf[i].title === title)
+    {
+      isFound = true;
+    }
+  }
+  return isFound;
 }
 
 module.exports = {
